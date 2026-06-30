@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Músicas</title>
+<link rel="stylesheet" href="musicas.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="voltar">← VOLTAR</a>
+
+<h1>MÚSICAS</h1>
+
+</header>
+
+<div class="blob"></div>
+
+<div class="player">
+
+<div class="capa">
+
+<img src="https://i.pinimg.com/736x/5e/d3/ea/5ed3ea240e79c228c9f39e9e8d1773ac.jpg" id="cover">
+
+</div>
+
+<h2 id="titulo">Escolha uma música</h2>
+
+<div class="controles">
+
+<button id="anterior">⏮</button>
+
+<button id="play">▶</button>
+
+<button id="proximo">⏭</button>
+
+</div>
+
+<input type="range" id="barra" value="0">
+
+<div class="tempo">
+
+<span id="atual">0:00</span>
+
+<span id="duracao">3:00</span>
+
+</div>
+
+</div>
+
+<section class="playlist">
+
+<div class="musica" data-src="musica1.mp3">
+Mars Stars (Dogs Of Jupter)
+</div>
+
+<div class="musica" data-src="musica2.mp3">
+It’s Called: Freefall
+</div>
+
+<div class="musica" data-src="musica3.mp3">
+Dark Red
+</div>
+
+</section>
+
+<audio id="audio"></audio>
+
+<script src="musicas.js"></script>
+
+</body>
+
+</html>

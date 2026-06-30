@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    body{
+    
+    background:#F7E6C8;
+    
+    font-family:'Press Start 2P',cursive;
+    
+    overflow-x:hidden;
+    
+    color:#222;
+    
+    }
+    
+    .backgroundBlob{
+    
+    position:fixed;
+    
+    width:700px;
+    height:700px;
+    
+    background:#ffb28f;
+    
+    filter:blur(100px);
+    
+    border-radius:50%;
+    
+    top:-150px;
+    right:-100px;
+    
+    opacity:.45;
+    
+    animation:blob 12s infinite alternate;
+    
+    z-index:-1;
+    
+    }
+    
+    @keyframes blob{
+    
+    100%{
+    
+    transform:
+    translate(-120px,80px)
+    scale(1.2)
+    rotate(180deg);
+    
+    }
+    
+    }
+    
+    header{
+    
+    padding:30px;
+    
+    }
+    
+    .voltar{
+    
+    text-decoration:none;
+    
+    color:black;
+    
+    padding:15px 25px;
+    
+    background:#ffd8b5;
+    
+    border:4px solid black;
+    
+    border-radius:20px;
+    
+    transition:.3s;
+    
+    }
+    
+    .voltar:hover{
+    
+    background:#ff9168;
+    
+    }
+    
+    main{
+    
+    width:90%;
+    
+    max-width:1000px;
+    
+    margin:auto;
+    
+    padding-bottom:80px;
+    
+    }
+    
+    .perfil{
+    
+    display:flex;
+    
+    align-items:center;
+    
+    gap:40px;
+    
+    margin-top:60px;
+    
+    background:#fff3dc;
+    
+    padding:40px;
+    
+    border:6px solid black;
+    
+    border-radius:40px;
+    
+    box-shadow:10px 10px black;
+    
+    }
+    
+    .perfil img{
+    
+    width:220px;
+    
+    border:5px solid black;
+    
+    border-radius:30px;
+    
+    image-rendering:pixelated;
+    
+    }
+    
+    .texto h1{
+    
+    color:#d24f4f;
+    
+    margin-bottom:20px;
+    
+    }
+    
+    .texto h2{
+    
+    font-size:12px;
+    
+    margin-bottom:25px;
+    
+    color:#666;
+    
+    }
+    
+    .texto p{
+    
+    font-size:12px;
+    
+    line-height:28px;
+    
+    }
+    
+    .caixa,
+    .habilidades{
+    
+    margin-top:40px;
+    
+    background:#fff3dc;
+    
+    padding:35px;
+    
+    border-radius:35px;
+    
+    border:6px solid black;
+    
+    box-shadow:10px 10px black;
+    
+    }
+    
+    .habilidades h2,
+    .caixa h2{
+    
+    margin-bottom:25px;
+    
+    }
+    
+    .skill{
+    
+    margin-bottom:25px;
+    
+    font-size:11px;
+    
+    }
+    
+    .barra{
+    
+    margin-top:12px;
+    
+    height:18px;
+    
+    background:white;
+    
+    border:3px solid black;
+    
+    }
+    
+    .valor{
+    
+    width:0;
+    
+    height:100%;
+    
+    transition:2s;
+    
+    }
+    
+    .html{background:#ff7c5b;}
+    .css{background:#4ab7ff;}
+    .js{background:#ffd14f;}
+    .criatividade{background:#ff5d75;}
+    
+    @media(max-width:850px){
+    
+    .perfil{
+    
+    flex-direction:column;
+    
+    text-align:center;
+    
+    }
+    
+    .perfil img{
+    
+    width:170px;
+    
+    }
+    
+    }
